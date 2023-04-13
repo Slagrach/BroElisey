@@ -1,0 +1,159 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box
+}
+
+* {
+	font: inherit;
+	padding: 0;
+	margin: 0
+}
+
+html,
+body {
+	/* height: 100% */
+}
+
+html {
+	color-scheme: dark light
+}
+
+body {
+	min-height: 100vh;
+	font-family: 'Blaka', sans-serif;
+}
+
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+body {
+	background: url(../images/bg-main.png)no-repeat center fixed, linear-gradient(to bottom, #202020, #111119);
+}
+
+body::-webkit-scrollbar {
+	width: 8px;
+	background: #272C30;
+}
+
+body::-webkit-scrollbar-thumb {
+	border-radius: 0 0 18px 0;
+	background: #B96177;
+}
+
+.wrapper {
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+}
+
+.wrapper audio {
+	width: 100%;
+	border-radius: 0;
+	z-index: 5;
+}
+
+.page {
+	position: relative;
+	/* isolation: isolate; */
+	flex: 1 1 auto;
+	justify-content: center;
+	transform-style: preserve-3d;
+	transform: perspective(1000px);
+}
+
+.page-bg {
+	position: absolute;
+	inset: 0;
+	margin-block: auto;
+	margin-inline: auto;
+	width: 969px;
+	height: 999px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: url(../images/bg-top.png)no-repeat center/contain;
+	/* transform: translateZ(20px) */
+}
+
+.card {
+	position: absolute;
+	inset: 0;
+	margin-block: auto;
+	margin-inline: auto;
+	width: min(100% - 2rem, 500px);
+	height: min-content;
+	display: flex;
+	border: 1px solid #FFFFFF;
+	border-bottom: 1px solid rgba(255, 255, 255, .5);
+	border-right: 1px solid rgba(255, 255, 255, .5);
+	border-radius: 20px;
+	backdrop-filter: blur(15px);
+	box-shadow: 0 25px 50px rgba(0, 0, 0, .1);
+	background: rgba(50, 50, 50, .1);
+	/* background: rgba(255, 255, 255, .25); */
+	padding: 60px;
+
+	z-index: 1;
+}
+
+.header,
+.footer {
+	position: relative;
+	width: 100%;
+	backdrop-filter: blur(15px);
+	z-index: 4;
+}
+
+.header__container {}
+
+.header__content,
+.footer__content {
+	padding: 20px 10px;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.header__logo img {
+	width: 50px;
+}
+
+.header__logo span {
+	font-size: 26px;
+}
+
+.page {}
+
+.particles {}
+
+.card {}
+
+.footer {}
+
+.footer__container {}
+
+.footer__content {}
+
+.who-is-this {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+}
+
+.who-is-this img {
+	width: 150px;
+}

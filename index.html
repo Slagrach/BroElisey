@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Dosis:200,300,regular,500,600,700,800" rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,200,300,regular,500,600,700,800,900"
+		  rel="stylesheet"/>
+	<link href="https://fonts.googleapis.com/css?family=Blaka:regular" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/any.css">
+	<title>Document</title>
+</head>
+
+<body>
+<div class="wrapper">
+	<audio src="audio/Antares - Ride On A Meteorite.mp3" autoplay loop></audio>
+	<header class="header">
+		<div class="header__container">
+			<div class="header__content">
+				<div class="header__logo"><img src="images/LogoMobile.png" alt=""> <span>slagrach</span></div>
+				<button id="toggle" class="toggle i">
+					<div class="cross">
+						<div class="x"></div>
+						<div class="y"></div>
+					</div>
+				</button>
+			</div>
+		</div>
+	</header>
+	<div class="cloud1">
+		<div class="cloud1__face"><span></span><span></span></div>
+		<div class="cloud1__clouds1"><span></span></div>
+		<div class="cloud1__clouds2"><span></span><span></span><span></span><span></span></div>
+		<div class="cloud1__clouds3"><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud1__clouds4">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud1__clouds5">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud1__rain">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud1__lightning">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="cloud2">
+		<div class="cloud1__face"><span></span><span></span></div>
+		<div class="cloud2__clouds1"><span></span></div>
+		<div class="cloud2__clouds2"><span></span><span></span><span></span><span></span></div>
+		<div class="cloud2__clouds3"><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud2__clouds4">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud2__clouds5">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud2__rain">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud2__lightning">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+	<div class="cloud3">
+		<div class="cloud1__face"><span></span><span></span></div>
+		<div class="cloud3__clouds1"><span></span></div>
+		<div class="cloud3__clouds2"><span></span><span></span><span></span><span></span></div>
+		<div class="cloud3__clouds3"><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud3__clouds4">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud3__clouds5">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud3__rain">
+			<span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
+		</div>
+		<div class="cloud3__lightning">
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+	</div>
+
+	<body class="back-row-toggle splat-toggle">
+	<div class="rain front-row"></div>
+	<div class="rain back-row"></div>
+	</body>
+	<!-- <div class="card">
+			<span>I,m here</span>
+		</div> -->
+	<main class="page" id="scene" data-friction-x="0.1" data-friction-y="0.1" data-scalar-x="25" data-scalar-y="15">
+		<canvas class="particles" data-color="#BE9164"></canvas>
+		<li class="layer" data-depth="0.30">
+			<ul class="rope depth-30">
+				<li><img src="images/rope.png" alt="Rope"></li>
+				<li class="hanger position-1">
+					<div class="board cloud-1 swing-3"></div>
+				</li>
+				<li class="hanger position-5">
+					<div class="board cloud-4 swing-1"></div>
+				</li>
+			</ul>
+		</li>
+		<ul class="rope depth-10" data-depth="0.15">
+			<li><img src="images/rope.png" alt="Rope"></li>
+			<li class="hanger position-2">
+				<div class="board cloud-2 swing-1"></div>
+			</li>
+			<li class="hanger position-4">
+				<div class="board cloud-1 swing-3"></div>
+			</li>
+			<li class="hanger position-8">
+				<div class="board birds swing-5"></div>
+			</li>
+		</ul>
+		<div class="page-bg" data-depth="0.2"></div>
+		<ul class="rope depth-60" data-depth="0.60">
+			<li><img src="images/rope.png" alt="Rope"></li>
+			<li class="hanger position-3">
+				<div class="board birds swing-5"></div>
+			</li>
+			<li class="hanger position-6">
+				<!-- <div class="board cloud-2 swing-2"></div> -->
+			</li>
+			<li class="hanger position-8">
+				<div class="board cloud-3 swing-4"></div>
+			</li>
+		</ul>
+		<div class="layer" data-depth="0.60">
+			<div class="lighthouse depth-60"></div>
+		</div>
+		<div class="layer" data-depth="0.70">
+			<div class="e es plain swing-4"><img class="e-es" src="images/es.png" alt=""></div>
+		</div>
+		<div class="layer" data-depth="0.70">
+			<div class="yk plain swing-5"><img class="e-es" src="images/y.png" alt=""></div>
+		</div>
+		<div class="layer" data-depth="0.70">
+			<div class="wave plain depth-80"></div>
+		</div>
+		<div class="layer" data-depth="0.80">
+			<div class="e plain swing-5"><img class="e-e" src="images/e.png" alt=""></div>
+		</div>
+		<div class="layer" data-depth="1.00">
+			<div class="wave paint depth-100"></div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__content"><span>By Slagrach</span></div>
+		</div>
+	</footer>
+	<div class="cables center">
+		<div class="panel">
+			<header>
+				<h1>ПРИВЕТ<em>ГРАЧ</em></h1>
+			</header>
+			<!-- <p>WOW, that's deep man! <strong>parallax.js</strong> reacts to the orientation of your smart
+					device, offsetting layers depending on their depth within a scene... Oh, you don't have a smart
+					device? No worries, if no gyroscope or motion detection hardware is available,
+					<strong>parallax.js</strong> uses the position of your cursor instead. Radical.
+				</p>
+				<p>This project is a collaboration between<br><a href="http://matthew.wagerfield.com"
+						target="_blank">Matthew Wagerfield</a> &amp; <a
+						href="http://cargocollective.com/whydontwetry" target="_blank">Claudio Guglieri</a>.</p>
+				<div class="social">
+					<a href="https://twitter.com/wagerfield" class="twitter-follow-button"
+						data-show-count="false">Follow <span class="handle">@wagerfield</span></a>
+					<a href="https://twitter.com/claudioguglieri" class="twitter-follow-button"
+						data-show-count="false">Follow <span class="handle">@claudioguglieri</span></a>
+				</div> -->
+			<div class="panel-body">
+				<canvas class="c" id="c"></canvas>
+				<img src="images/family.jpg" alt="">
+			</div>
+			<ul class="links">
+				<li><a class="download" target="_blank" href="https://www.youtube.com/channel/UCMMfpvtenFiw7AI0cJm-DUA">💩</a></li>
+				<li><a class="github" target="_blank" href="https://slagrach.github.io/Yelisey.grach/">🔥</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="who-is-this"><img src="images/i.png" , alt=""></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+<script src="js/libs/vanilla-tilt.js"></script>
+<script src="js/particles.js"></script>
+<script src="js/script.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelector(".page"), {
+		max: 10,
+		speed: 200
+	});
+	var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene, {
+		relativeInput: true,
+	});
+
+</script>
+</body>
+
+</html>
